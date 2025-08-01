@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form>
+        <label>Country</label>
+        <select name="Country">
+            <!-- ما داخل ال name هوالي رح يضهر بال url-->
+            <optgroup label="Country">
+                <option value="Egypt">Egypt</option>
+                <option value="china">China</option>
+                <option value="spain">Spain</option>
+                <option selected value="Jordan">Jordan</option>
+            </optgroup>
+            <!-- كتبت ال selected  قبل ال v-->
+        </select>
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
