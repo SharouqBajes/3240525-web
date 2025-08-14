@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jordan Tourism</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #d9cbbf;
+    padding: 20px;
+    text-align: center;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #5c4532;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav a:hover {
+    color: #a87f58;
+}
+section {
+    display: none;
+    padding: 20px;
+}
+section.active {
+    display: block;
+}
+h2 {
+    color: #7c5e3c;
+}
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+ul, ol {
+    margin: 10px 0 20px 20px;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #7c5e3c;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+footer {
+    background-color: #d9cbbf;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+button, select, input[type="submit"] {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #7c5e3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover, input[type="submit"]:hover {
+    background-color: #a87f58;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Welcome to Jordan Tourism</h1>
+<nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('petra')">Petra</a>
+    <a onclick="showSection('wadi_rum')">Wadi Rum</a>
+    <a onclick="showSection('dead_sea')">Dead Sea</a>
+    <a onclick="showSection('jerash')">Jerash</a>
+    <a onclick="showSection('contact')">Contact</a>
+</nav>
+</header>
+
+<section id="home" class="active">
+<h2>Discover Jordan</h2>
+<p>Jordan is a land of breathtaking landscapes and ancient history. Explore the most famous tourist destinations below:</p>
+<ul>
+<li><a onclick="showSection('petra')">Petra</a></li>
+<li><a onclick="showSection('wadi_rum')">Wadi Rum</a></li>
+<li><a onclick="showSection('dead_sea')">Dead Sea</a></li>
+<li><a onclick="showSection('jerash')">Jerash</a></li>
+</ul>
+<table>
+<tr>
+<th>Destination</th>
+<th>Best Season</th>
+<th>Entry Fee</th>
+</tr>
+<tr>
+<td>Petra</td>
+<td>Spring & Autumn</td>
+<td>$70</td>
+</tr>
+<tr>
+<td>Wadi Rum</td>
+<td>Winter & Spring</td>
+<td>$50</td>
+</tr>
+<tr>
+<td>Dead Sea</td>
+<td>All Year</td>
+<td>$20</td>
+</tr>
+<tr>
+<td>Jerash</td>
+<td>Spring & Autumn</td>
+<td>$12</td>
+</tr>
+</table>
+</section>
+
+<section id="petra">
+<h2>Petra</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Petra_Jordan_BW_21.JPG" alt="Petra">
+<p>Petra is Jordan’s most famous archaeological site, known as the Rose City. It’s a UNESCO World Heritage Site.</p>
+<h3>Facts:</h3>
+<ul>
+<li>Located in southern Jordan</li>
+<li>Best time to visit: Spring & Autumn</li>
+<li>Entry Fee: $70</li>
+</ul>
+<table>
+<tr>
+<th>Feature</th>
+<th>Details</th>
+</tr>
+<tr>
+<td>Main Attraction</td>
+<td>The Treasury</td>
+</tr>
+<tr>
+<td>Built</td>
+<td>c. 5th century BC</td>
+</tr>
+<tr>
+<td>Visitors</td>
+<td>Over 1 million annually</td>
+</tr>
+</table>
+</section>
+
+<section id="wadi_rum">
+<h2>Wadi Rum</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Wadi_Rum_sunset.jpg" alt="Wadi Rum">
+<p>Wadi Rum, also known as the Valley of the Moon, is a protected desert wilderness with dramatic sandstone mountains.</p>
+<h3>Activities:</h3>
+<ol>
+<li>Jeep Tours</li>
+<li>Camping under stars</li>
+<li>Hiking and rock climbing</li>
+<li>Hot air balloon rides</li>
+</ol>
+</section>
+
+<section id="dead_sea">
+<h2>Dead Sea</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Dead_Sea_Aerial_View.jpg" alt="Dead Sea">
+<p>The Dead Sea is the lowest point on Earth, famous for its salty water and mineral-rich mud.</p>
+<ul>
+<li>Float effortlessly due to high salt content</li>
+<li>Health resorts and spa treatments</li>
+<li>All year round visits</li>
+</ul>
+</section>
+
+<section id="jerash">
+<h2>Jerash</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Jerash_Forum.JPG" alt="Jerash">
+<p>Jerash is known for its well-preserved Roman ruins including theaters, temples, and colonnaded streets.</p>
+<h3>Highlights:</h3>
+<ol>
+<li>Oval Forum</li>
+<li>Hadrian’s Arch</li>
+<li>Hippodrome</li>
+<li>South Theater</li>
+</ol>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form>
+<label for="fname">Full Name:</label>
+<input type="text" id="fname" name="fname" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="destination">Select Destination:</label>
+<select id="destination" name="destination">
+<option value="petra">Petra</option>
+<option value="wadi_rum">Wadi Rum</option>
+<option value="dead_sea">Dead Sea</option>
+<option value="jerash">Jerash</option>
+</select>
+
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="5"></textarea>
+
+<input type="submit" value="Send Message">
+</form>
+</section>
+
+<footer>
+<p>&copy; 2025 Jordan Tourism. All rights reserved.</p>
+</footer>
+
+<script>
+function showSection(id) {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
