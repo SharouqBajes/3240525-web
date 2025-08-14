@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>University of Jordan</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* أبيض */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #c8e6c9; /* أخضر فاتح */
+    padding: 20px;
+    text-align: center;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #2e7d32; /* أخضر داكن قليلًا */
+    font-weight: bold;
+    cursor: pointer;
+}
+nav a:hover {
+    color: #66bb6a; /* أخضر فاتح عند المرور */
+}
+section {
+    display: none;
+    padding: 20px;
+}
+section.active {
+    display: block;
+}
+h2 {
+    color: #2e7d32; /* أخضر داكن */
+}
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+ul, ol {
+    margin: 10px 0 20px 20px;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #2e7d32; /* أخضر داكن */
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+footer {
+    background-color: #c8e6c9; /* أخضر فاتح */
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+button, select, input[type="submit"] {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #2e7d32; /* أخضر داكن */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover, input[type="submit"]:hover {
+    background-color: #66bb6a; /* أخضر فاتح عند المرور */
+}
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Welcome to the University of Jordan</h1>
+<nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('engineering')">Engineering</a>
+    <a onclick="showSection('science')">Science</a>
+    <a onclick="showSection('library')">Library</a>
+    <a onclick="showSection('sports')">Sports Complex</a>
+    <a onclick="showSection('student_center')">Student Center</a>
+    <a onclick="showSection('contact')">Contact</a>
+</nav>
+</header>
+
+<section id="home" class="active">
+<h2>About the University of Jordan</h2>
+<p>The University of Jordan is the largest and oldest university in Jordan, founded in 1962. It is located in Amman and offers a wide range of programs in various fields.</p>
+
+<h3>Main Campuses:</h3>
+<ul>
+<li><a onclick="showSection('engineering')">Faculty of Engineering</a></li>
+<li><a onclick="showSection('science')">Faculty of Science</a></li>
+<li><a onclick="showSection('library')">University Library</a></li>
+<li><a onclick="showSection('sports')">Sports Complex</a></li>
+<li><a onclick="showSection('student_center')">Student Center</a></li>
+</ul>
+
+<h3>Quick Facts:</h3>
+<table>
+<tr>
+<th>Faculty/Place</th>
+<th>Established</th>
+<th>Students</th>
+</tr>
+<tr>
+<td>Engineering</td>
+<td>1970</td>
+<td>2500+</td>
+</tr>
+<tr>
+<td>Science</td>
+<td>1965</td>
+<td>1800+</td>
+</tr>
+<tr>
+<td>Library</td>
+<td>1962</td>
+<td>Open to all</td>
+</tr>
+<tr>
+<td>Sports Complex</td>
+<td>1980</td>
+<td>All Students</td>
+</tr>
+<tr>
+<td>Student Center</td>
+<td>1975</td>
+<td>All Students</td>
+</tr>
+</table>
+</section>
+
+<section id="engineering">
+<h2>Faculty of Engineering</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/01/UJ_Engineering_Building.jpg" alt="Engineering Faculty">
+<p>The Faculty of Engineering offers programs in Civil, Mechanical, Electrical, and Computer Engineering. It is equipped with modern labs and workshops.</p>
+<h3>Departments:</h3>
+<ul>
+<li>Civil Engineering</li>
+<li>Mechanical Engineering</li>
+<li>Electrical Engineering</li>
+<li>Computer Engineering</li>
+<li>Architecture</li>
+</ul>
+</section>
+
+<section id="science">
+<h2>Faculty of Science</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/UJ_Science_Building.jpg" alt="Science Faculty">
+<p>The Faculty of Science provides education in Physics, Chemistry, Biology, Mathematics, and Geology. It has advanced research laboratories.</p>
+<h3>Departments:</h3>
+<ol>
+<li>Physics</li>
+<li>Chemistry</li>
+<li>Biology</li>
+<li>Mathematics</li>
+<li>Geology</li>
+</ol>
+</section>
+
+<section id="library">
+<h2>University Library</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/UJ_Library.jpg" alt="Library">
+<p>The University Library is the main resource center providing books, journals, and digital resources for students and faculty members.</p>
+<ul>
+<li>Open daily from 8:00 AM to 10:00 PM</li>
+<li>Offers online databases and e-books</li>
+<li>Study rooms available for groups</li>
+</ul>
+</section>
+
+<section id="sports">
+<h2>Sports Complex</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/UJ_Sports_Complex.jpg" alt="Sports Complex">
+<p>The Sports Complex offers facilities for basketball, football, swimming, and fitness. Students can join various sports clubs.</p>
+<ol>
+<li>Indoor and Outdoor Courts</li>
+<li>Swimming Pool</li>
+<li>Gym & Fitness Center</li>
+<li>Sports Clubs</li>
+</ol>
+</section>
+
+<section id="student_center">
+<h2>Student Center</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/53/UJ_Student_Center.jpg" alt="Student Center">
+<p>The Student Center is a hub for student activities, events, and cultural programs. It includes cafeterias, meeting rooms, and lounges.</p>
+<ul>
+<li>Clubs and Societies</li>
+<li>Workshops and Events</li>
+<li>Cafeterias and Lounges</li>
+</ul>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form>
+<label for="fname">Full Name:</label>
+<input type="text" id="fname" name="fname" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="faculty">Select Faculty/Place:</label>
+<select id="faculty" name="faculty">
+<option value="engineering">Engineering</option>
+<option value="science">Science</option>
+<option value="library">Library</option>
+<option value="sports">Sports Complex</option>
+<option value="student_center">Student Center</option>
+</select>
+
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="5"></textarea>
+
+<input type="submit" value="Send Message">
+</form>
+</section>
+
+<footer>
+<p>&copy; 2025 University of Jordan. All rights reserved.</p>
+</footer>
+
+<script>
+function showSection(id) {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
